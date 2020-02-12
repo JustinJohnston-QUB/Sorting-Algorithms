@@ -65,7 +65,7 @@ void bubblesort(int* array, int size) {
 	}
 }
 
-void insertionSort(int* array, int N) {
+void insertionSort(int* array, int size) {
 	// iterate through array from first position 
 	//get the value to be sorted
 	//set position marker to 0
@@ -73,7 +73,7 @@ void insertionSort(int* array, int N) {
 	//iterate from end of array to the position found 
 		//swap values
 //set the value at position found
-	for (int x = 1; x < N; x++) {
+	for (int x = 1; x < size; x++) {
 		int value = array[x];
 		int position = 0;
 		while (position < x && array[position] <= value) position++;
